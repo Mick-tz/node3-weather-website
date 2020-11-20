@@ -24,21 +24,21 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        kawai : 'chino'
+        kawai : 'cupc4ke - miguel.martinez@ciencias.unam.mx'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about',{
         title: 'About wolverine',
-        kawai: 'chino'
+        kawai: 'cupc4ke - miguel.martinez@ciencias.unam.mx'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help',{
         title: 'Help page',
-        kawai: 'chino'
+        kawai: 'cupc4ke - miguel.martinez@ciencias.unam.mx'
     })
 })
 
@@ -83,7 +83,7 @@ app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
         err:'Help article not found',
-        kawai : 'chino'
+        kawai : 'cupc4ke - miguel.martinez@ciencias.unam.mx'
     })
 })
 
@@ -91,7 +91,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         err:'Not found',
-        kawai : 'chino'
+        kawai : 'cupc4ke - miguel.martinez@ciencias.unam.mx'
     })
 })
 
